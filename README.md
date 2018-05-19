@@ -1,3 +1,3 @@
 # Globe
 
-Click here https://shawenyao.github.io/Globe/Output/globe.html
+Click here https://shawenyao.github.io/Globe/Output/demo.html
