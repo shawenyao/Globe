@@ -29,17 +29,27 @@ dev.off()
 
 
 #== plot globe
-lat <- matrix(seq(90, -90, len = 50)*pi/180, 50, 50, byrow = TRUE)
-long <- matrix(seq(-180, 180, len = 50)*pi/180, 50, 50)
+# see ?persp3d
+lat <- matrix(
+  seq(from = 90, to = -90, length.out = 50) * pi / 180, 
+  nrow = 50, 
+  ncol = 50, 
+  byrow = TRUE
+)
+long <- matrix(
+  seq(from = -180, to = 180, length.out = 50) * pi / 180, 
+  nrow = 50, 
+  ncol = 50
+)
 
-r <- 6378.1 # radius of Earth in km
-x <- r*cos(lat)*cos(long)
-y <- r*cos(lat)*sin(long)
-z <- r*sin(lat)
-
+# radius of Earth in km
+r <- 6378.1
+# convert polar coordinates to Cartisian coordinates
+x <- r * cos(lat) *cos(long)
+y <- r * cos(lat)*sin(long)
+z <- r * sin(lat)
 
 setwd("./Output")
-
 open3d()
 persp3d(
   x, y, z, col = "white", 
@@ -49,7 +59,8 @@ persp3d(
 )
 
 # set camera angle
-rgl.viewpoint(theta = 180 - 23.4, phi = 90)
+rgl.viewpoint(theta = 180 - 23.44, phi = 90)
+
 
 #== ouput
 rglwidget(
