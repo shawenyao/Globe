@@ -45,8 +45,8 @@ long <- matrix(
 # radius of Earth in km
 r <- 6378.1
 # convert polar coordinates to Cartisian coordinates
-x <- r * cos(lat) *cos(long)
-y <- r * cos(lat)*sin(long)
+x <- r * cos(lat) * cos(long)
+y <- r * cos(lat) * sin(long)
 z <- r * sin(lat)
 
 setwd("./Output")
