@@ -8,8 +8,6 @@ setwd("C:/Users/Wenyao/Desktop/R/Globe")
 #== texture
 world <- map_data('world')
 
-# world$region[world$region=="Taiwan"] <- "China"
-
 world_map <- ggplot(world, aes(x = long, y = lat, group = group, fill = region)) +
   geom_polygon() +
   coord_cartesian(xlim = range(world$long), ylim = c(min(world$lat) + 2, max(world$lat))) +
