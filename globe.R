@@ -1,6 +1,5 @@
 library(rgl)
 library(ggplot2)
-library(maps)
 library(htmlwidgets)
 
 setwd("C:/Users/Wenyao/Desktop/R/Globe")
@@ -8,6 +7,8 @@ setwd("C:/Users/Wenyao/Desktop/R/Globe")
 
 #== texture
 world <- map_data('world')
+
+# world$region[world$region=="Taiwan"] <- "China"
 
 world_map <- ggplot(world, aes(x = long, y = lat, group = group, fill = region)) +
   geom_polygon() +
