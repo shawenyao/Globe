@@ -65,7 +65,7 @@ rgl.viewpoint(theta = 180 - 23.44, phi = 90)
 #== ouput
 rglwidget(
   width = 300,
-  height = 300,
+  height = 300
 ) %>%
   playwidget(
     par3dinterpControl(spin3d(), from = 0, to = 12, steps = 15),
