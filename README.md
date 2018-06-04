@@ -7,32 +7,32 @@
 https://shawenyao.github.io/Globe/solar_system.html
 
 ### Sun
-https://shawenyao.github.io/Globe/01_Sun.html
+https://shawenyao.github.io/Globe/Output/01_Sun.html
 
 ### Mercury
-https://shawenyao.github.io/Globe/02_Mercury.html
+https://shawenyao.github.io/Globe/Output/02_Mercury.html
 
 ### Venus
-https://shawenyao.github.io/Globe/03_Venus.html
+https://shawenyao.github.io/Globe/Output/03_Venus.html
 
 ### Earth
-https://shawenyao.github.io/Globe/04_Earth.html
+https://shawenyao.github.io/Globe/Output/04_Earth.html
 
 ### Moon
-https://shawenyao.github.io/Globe/05_Moon.html
+https://shawenyao.github.io/Globe/Output/05_Moon.html
 
 ### Mars
-https://shawenyao.github.io/Globe/06_Mars.html
+https://shawenyao.github.io/Globe/Output/06_Mars.html
 
 ### Jupiter
-https://shawenyao.github.io/Globe/07_Jupiter.html
+https://shawenyao.github.io/Globe/Output/07_Jupiter.html
 
 ### Saturn
-https://shawenyao.github.io/Globe/08_Saturn.html
+https://shawenyao.github.io/Globe/Output/08_Saturn.html
 
 ### Uranus
-https://shawenyao.github.io/Globe/09_Uranus.html
+https://shawenyao.github.io/Globe/Output/09_Uranus.html
 
 ### Neptune
-https://shawenyao.github.io/Globe/10_Neptune.html
+https://shawenyao.github.io/Globe/Output/10_Neptune.html
 
