@@ -47,7 +47,7 @@ plot_globe <- function(planet, texture, rpm, axial_tilt, file_name){
       loop = TRUE,
       components = "Play"
     ) %>% 
-    # let the rglwidget autoplay
+    # let the rglwidget autoplay on render
     onRender(
       jsCode ="
         function(el, x) {
