@@ -62,11 +62,13 @@ rgl.clear(type = "lights")
 
 # initialize light source
 period <- 30 / rpm
-light3d(
-  theta = ((period / 8) %% period) / period * 320 - 160,
-  phi = 0,
-  viewpoint.rel = TRUE
-)
+for(i in 1:1){
+  light3d(
+    theta = 60,
+    phi = 0,
+    viewpoint.rel = TRUE
+  )
+}
 
 # the spining function
 spin_moon <- spin3d(
@@ -133,4 +135,4 @@ rglwidget(
     title = planet
   )
 
-# rgl.close()
+rgl.close()
