@@ -7,11 +7,13 @@ setwd(root_dir)
 source("./functions.R")
 
 
-
-#== globe setup
+#==== globe setup ====
 # phases of moon
-thetas <- c(130, 110, 87.5, 60, 0, 120, 92.5, 70, 50)
-phis <- c(0, 0, 0, 0, 0, 180, 180, 180, 180)
+thetas <- c(
+  seq(from = 145, to = 0, length.out = 15),
+  seq(from = 180, to = 45, length.out = 15)
+)
+phis <- c(rep(0, times = 15), rep(180, times = 15))
 
 for(phase in seq_along(thetas)){
   

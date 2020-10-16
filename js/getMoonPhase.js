@@ -26,17 +26,7 @@ function getMoonPhase(year, month, day)
 
     jd -= b; //subtract integer part to leave fractional part of original jd
 
-    b = Math.round(jd * 8); //scale fraction from 0-8 and round
-
-    // 0 => New Moon (with a little Waxing Crescent Moon)
-    // 1 => Waxing Crescent Moon
-    // 2 => Quarter Moon
-    // 3 => Waxing Gibbous Moon
-    // 4 => Full Moon
-    // 5 => Waning Gibbous Moon
-    // 6 => Last Quarter Moon
-    // 7 => Waning Crescent Moon
-    // 8 => New Moon (with a little Waning Crescent Moon)
+    b = Math.round(jd * 30); //scale fraction from 0-29 and round
     
     return b;
 }

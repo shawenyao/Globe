@@ -1,7 +1,6 @@
 window.onload = function(){
 
     const queryString = window.location.search;
-    console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
     const date = urlParams.get("date");
 
@@ -17,7 +16,7 @@ window.onload = function(){
         var day =  Number(year_month_date[2]);
     }
 
-    phase = getMoonPhase(year, month, day) + 1;
+    phase = getMoonPhase(year, month, day);
     document.getElementById("moon").src = "Output/Moon_" + phase + ".html";
 
     // console.log(year + "/" + month + "/" + day);
