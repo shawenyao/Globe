@@ -11,7 +11,7 @@ source("./functions.R")
 # phases of moon
 thetas <- c(
   seq(from = 145, to = 0, length.out = 15),
-  seq(from = 180, to = 45, length.out = 15)
+  seq(from = 170, to = 45, length.out = 15)
 )
 phis <- c(rep(0, times = 15), rep(180, times = 15))
 
