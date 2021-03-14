@@ -16,7 +16,7 @@ window.onload = function(){
         var day =  Number(year_month_date[2]);
     }
 
-    phase = getMoonPhase(year, month, day);
+    phase = getMoonPhase(year, month, day) + 1;
     document.getElementById("moon").src = "Output/Moon_" + phase + ".html";
 
     // console.log(year + "/" + month + "/" + day);
